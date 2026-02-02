@@ -1,0 +1,6 @@
+# joelazar's personal blog
+
+## Posts
+- [Lost in translation - Remix edition](http://localhost:1313/posts/lost-in-translation/)
+- [Refactored dotfiles](http://localhost:1313/posts/second-post/)
+- [My first post](http://localhost:1313/posts/first-post-with-my-dogs/)
