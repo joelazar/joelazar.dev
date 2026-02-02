@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto" data-theme="dark">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>Zed vs Neovim - A personal take | joelazar&#39;s personal blog</title>
+<meta name="keywords" content="editors, neovim, zed, productivity, programming, tools">
+<meta name="description" content="I&rsquo;ve been using Neovim for years. It&rsquo;s fast, extensible, and there&rsquo;s a plugin for everything. But lately (actually, for quite a while now), I&rsquo;ve been experimenting with Zed, and I have some thoughts.
+
+Why Zed caught my attention 🤩
+Zed is fast. Like, really fast. But so is Neovim, so that&rsquo;s not the selling point.
+What made me curious:
+
+Simpler config - No more debugging why a plugin broke after an update
+Great vim emulation - Actually usable, not an afterthought
+Built-in features - Remote dev via SSH, REPL integration, debugging - all just work
+AI integration - Native, not bolted on through five different plugins
+Collaborative coding - Finally, pair programming without screen sharing lag
+
+The development pace is impressive. New releases with meaningful content every week. And it&rsquo;s open source.">
+<meta name="author" content="József Gábor Lázár">
+<link rel="canonical" href="http://localhost:1313/posts/zed-vs-neovim/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/zed-vs-neovim/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "light") {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script>
+<meta property="og:url" content="http://localhost:1313/posts/zed-vs-neovim/">
+  <meta property="og:site_name" content="joelazar&#39;s personal blog">
+  <meta property="og:title" content="Zed vs Neovim - A personal take">
+  <meta property="og:description" content="I’ve been using Neovim for years. It’s fast, extensible, and there’s a plugin for everything. But lately (actually, for quite a while now), I’ve been experimenting with Zed, and I have some thoughts.
+Why Zed caught my attention 🤩 Zed is fast. Like, really fast. But so is Neovim, so that’s not the selling point.
+What made me curious:
+Simpler config - No more debugging why a plugin broke after an update Great vim emulation - Actually usable, not an afterthought Built-in features - Remote dev via SSH, REPL integration, debugging - all just work AI integration - Native, not bolted on through five different plugins Collaborative coding - Finally, pair programming without screen sharing lag The development pace is impressive. New releases with meaningful content every week. And it’s open source.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-02-02T18:30:00+01:00">
+    <meta property="article:modified_time" content="2026-02-02T18:30:00+01:00">
+    <meta property="article:tag" content="Editors">
+    <meta property="article:tag" content="Neovim">
+    <meta property="article:tag" content="Zed">
+    <meta property="article:tag" content="Productivity">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Tools">
+      <meta property="og:image" content="http://localhost:1313/profile.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://localhost:1313/profile.jpg">
+<meta name="twitter:title" content="Zed vs Neovim - A personal take">
+<meta name="twitter:description" content="I&rsquo;ve been using Neovim for years. It&rsquo;s fast, extensible, and there&rsquo;s a plugin for everything. But lately (actually, for quite a while now), I&rsquo;ve been experimenting with Zed, and I have some thoughts.
+
+Why Zed caught my attention 🤩
+Zed is fast. Like, really fast. But so is Neovim, so that&rsquo;s not the selling point.
+What made me curious:
+
+Simpler config - No more debugging why a plugin broke after an update
+Great vim emulation - Actually usable, not an afterthought
+Built-in features - Remote dev via SSH, REPL integration, debugging - all just work
+AI integration - Native, not bolted on through five different plugins
+Collaborative coding - Finally, pair programming without screen sharing lag
+
+The development pace is impressive. New releases with meaningful content every week. And it&rsquo;s open source.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "http://localhost:1313/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Zed vs Neovim - A personal take",
+      "item": "http://localhost:1313/posts/zed-vs-neovim/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Zed vs Neovim - A personal take",
+  "name": "Zed vs Neovim - A personal take",
+  "description": "I\u0026rsquo;ve been using Neovim for years. It\u0026rsquo;s fast, extensible, and there\u0026rsquo;s a plugin for everything. But lately (actually, for quite a while now), I\u0026rsquo;ve been experimenting with Zed, and I have some thoughts.\nWhy Zed caught my attention 🤩 Zed is fast. Like, really fast. But so is Neovim, so that\u0026rsquo;s not the selling point.\nWhat made me curious:\nSimpler config - No more debugging why a plugin broke after an update Great vim emulation - Actually usable, not an afterthought Built-in features - Remote dev via SSH, REPL integration, debugging - all just work AI integration - Native, not bolted on through five different plugins Collaborative coding - Finally, pair programming without screen sharing lag The development pace is impressive. New releases with meaningful content every week. And it\u0026rsquo;s open source.\n",
+  "keywords": [
+    "editors", "neovim", "zed", "productivity", "programming", "tools"
+  ],
+  "articleBody": "I’ve been using Neovim for years. It’s fast, extensible, and there’s a plugin for everything. But lately (actually, for quite a while now), I’ve been experimenting with Zed, and I have some thoughts.\nWhy Zed caught my attention 🤩 Zed is fast. Like, really fast. But so is Neovim, so that’s not the selling point.\nWhat made me curious:\nSimpler config - No more debugging why a plugin broke after an update Great vim emulation - Actually usable, not an afterthought Built-in features - Remote dev via SSH, REPL integration, debugging - all just work AI integration - Native, not bolted on through five different plugins Collaborative coding - Finally, pair programming without screen sharing lag The development pace is impressive. New releases with meaningful content every week. And it’s open source.\nWhere Zed falls short (for now) 🥲 Moving from Neovim, there are gaps. Some are Zed-specific issues, others are missing plugin equivalents.\nDealbreakers for some:\nNo persistent undo history - Close a buffer, lose your undo history Fuzzy finder lacks power - Not Telescope-level yet, but there’s a promising PR Terminal is tied to the editor - New instance = lost terminal session. Not ideal for long-running processes Missing Neovim goodies:\nflash.nvim - Quick navigation is part of my muscle memory dial.nvim - Incrementing true to false with is surprisingly useful cmp-calc / cmp-path - Calculator and path completion in the completion menu TODO comment highlighting Some language-specific plugins are better maintained in Neovim Polish needed:\nGit conflict resolution could be better No undo for file deletions Image previews don’t work in terminal apps like yazi No recent project search command Project search could use prefiltering (ctrl+g) and current directory scope Jupyter notebook integration would be nice The good news? Zed’s team ships fixes fast. Issues that annoyed me before are already resolved: window resize with keyboard, terminal splits, completion menu scrolling, diff view, slow Neovim in Zed terminal, and vim marks as bookmarks.\nThe real problem with Neovim 💔 It’s not Neovim itself. It’s the ecosystem.\nThe LazyVim distribution is great, but you’re at the mercy of individual plugin authors. Sometimes, for example, folke disappears for months - and he alone maintains the majority of plugins that most modern Neovim configurations depend on. One person maintaining critical infrastructure is a single point of failure. This is absolutely no shame on folke - he’s doing amazing work for free - but this is just how open source works.\nPlugin updates break things. You spend time maintaining your config instead of actually coding. Debugging and task running still feel like second-class citizens compared to IDEs.\nSome pain points that IDEs handle better:\nDebugging experience Collaborative coding UI flexibility (terminal constraints are real) Long-term maintenance by dedicated teams vs. solo maintainers My verdict 📔 Both are great. Both are fast. Both are open source.\nZed is easier to use and maintain. Neovim is more powerful and customizable.\nFor now, I’m using both. Doing quick edits still feels easier in Neovim. Zed when I want to spend a bigger chunk of time on a codebase. I try to keep my LazyVim and Zed keymaps similar, so I don’t have to think too much about which editor I’m using.\nThe best editor is the one that gets out of your way. Sometimes that’s Neovim. Sometimes it’s Zed.\nFor my configurations, check out:\nZed config Neovim config ",
+  "wordCount" : "565",
+  "inLanguage": "en",
+  "image": "http://localhost:1313/profile.jpg","datePublished": "2026-02-02T18:30:00+01:00",
+  "dateModified": "2026-02-02T18:30:00+01:00",
+  "author":{
+    "@type": "Person",
+    "name": "József Gábor Lázár"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/posts/zed-vs-neovim/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "joelazar's personal blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="joelazar&#39;s personal blog (Alt + H)">joelazar&#39;s personal blog</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/posts" title="Posts">
+                    <span>Posts</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                    <span>Search</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="Tags">
+                    <span>Tags</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <h1 class="post-title entry-hint-parent">
+      Zed vs Neovim - A personal take
+      <span class="entry-hint" title="Draft">
+        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
+          <path
+            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+        </svg>
+      </span>
+    </h1>
+    <div class="post-meta"><span title='2026-02-02 18:30:00 +0100 CET'>February 2, 2026</span>&nbsp;·&nbsp;<span>József Gábor Lázár</span>
+
+</div>
+  </header> 
+  <div class="post-content"><p>I&rsquo;ve been using Neovim for years. It&rsquo;s fast, extensible, and there&rsquo;s a plugin for everything. But lately (actually, for quite a while now), I&rsquo;ve been experimenting with <a href="https://zed.dev/">Zed</a>, and I have some thoughts.</p>
+<hr>
+<h2 id="why-zed-caught-my-attention-">Why Zed caught my attention 🤩<a hidden class="anchor" aria-hidden="true" href="#why-zed-caught-my-attention-">#</a></h2>
+<p>Zed is <strong>fast</strong>. Like, really fast. But so is Neovim, so that&rsquo;s not the selling point.</p>
+<p>What made me curious:</p>
+<ul>
+<li><strong>Simpler config</strong> - No more debugging why a plugin broke after an update</li>
+<li><strong>Great vim emulation</strong> - Actually usable, not an afterthought</li>
+<li><strong>Built-in features</strong> - Remote dev via SSH, REPL integration, debugging - all just work</li>
+<li><strong>AI integration</strong> - Native, not bolted on through five different plugins</li>
+<li><strong>Collaborative coding</strong> - Finally, pair programming without screen sharing lag</li>
+</ul>
+<p>The development pace is impressive. New releases with meaningful content every week. And it&rsquo;s open source.</p>
+<hr>
+<h2 id="where-zed-falls-short-for-now-">Where Zed falls short (for now) 🥲<a hidden class="anchor" aria-hidden="true" href="#where-zed-falls-short-for-now-">#</a></h2>
+<p>Moving from Neovim, there are gaps. Some are Zed-specific issues, others are missing plugin equivalents.</p>
+<p><strong>Dealbreakers for some:</strong></p>
+<ul>
+<li><strong>No persistent undo history</strong> - Close a buffer, lose your undo history</li>
+<li><strong>Fuzzy finder lacks power</strong> - Not Telescope-level yet, but there&rsquo;s a promising <a href="https://github.com/zed-industries/zed/pull/46478">PR</a></li>
+<li><strong>Terminal is tied to the editor</strong> - New instance = lost terminal session. Not ideal for long-running processes</li>
+</ul>
+<p><strong>Missing Neovim goodies:</strong></p>
+<ul>
+<li><strong>flash.nvim</strong> - Quick navigation is part of my muscle memory</li>
+<li><strong>dial.nvim</strong> - Incrementing <code>true</code> to <code>false</code> with <code>&lt;C-a&gt;</code> is surprisingly useful</li>
+<li><strong>cmp-calc / cmp-path</strong> - Calculator and path completion in the completion menu</li>
+<li><strong>TODO comment highlighting</strong></li>
+<li>Some language-specific plugins are better maintained in Neovim</li>
+</ul>
+<p><strong>Polish needed:</strong></p>
+<ul>
+<li>Git conflict resolution could be better</li>
+<li>No undo for file deletions</li>
+<li>Image previews don&rsquo;t work in terminal apps like yazi</li>
+<li>No recent project search command</li>
+<li>Project search could use prefiltering (<code>ctrl+g</code>) and current directory scope</li>
+<li>Jupyter notebook integration would be nice</li>
+</ul>
+<p><strong>The good news?</strong> Zed&rsquo;s team ships fixes fast. Issues that annoyed me before are already resolved: window resize with keyboard, terminal splits, completion menu scrolling, diff view, slow Neovim in Zed terminal, and vim marks as bookmarks.</p>
+<hr>
+<h2 id="the-real-problem-with-neovim-">The real problem with Neovim 💔<a hidden class="anchor" aria-hidden="true" href="#the-real-problem-with-neovim-">#</a></h2>
+<p>It&rsquo;s not Neovim itself. It&rsquo;s the ecosystem.</p>
+<p>The <a href="https://www.lazyvim.org/">LazyVim</a> distribution is great, but you&rsquo;re at the mercy of individual plugin authors. Sometimes, for example, <a href="https://github.com/folke">folke</a> disappears for months - and he alone maintains the majority of plugins that most modern Neovim configurations depend on. One person maintaining critical infrastructure is a single point of failure. This is absolutely no shame on folke - he&rsquo;s doing amazing work for free - but this is just how open source works.</p>
+<p>Plugin updates break things. You spend time maintaining your config instead of actually coding. Debugging and task running still feel like second-class citizens compared to IDEs.</p>
+<p>Some pain points that IDEs handle better:</p>
+<ul>
+<li>Debugging experience</li>
+<li>Collaborative coding</li>
+<li>UI flexibility (terminal constraints are real)</li>
+<li>Long-term maintenance by dedicated teams vs. solo maintainers</li>
+</ul>
+<hr>
+<h2 id="my-verdict-">My verdict 📔<a hidden class="anchor" aria-hidden="true" href="#my-verdict-">#</a></h2>
+<p>Both are great. Both are fast. Both are open source.</p>
+<p>Zed is easier to use and maintain. Neovim is more powerful and customizable.</p>
+<p>For now, I&rsquo;m using both. Doing quick edits still feels easier in Neovim. Zed when I want to spend a bigger chunk of time on a codebase. I try to keep my LazyVim and Zed keymaps similar, so I don&rsquo;t have to think too much about which editor I&rsquo;m using.</p>
+<p>The best editor is the one that gets out of your way. Sometimes that&rsquo;s Neovim. Sometimes it&rsquo;s Zed.</p>
+<p>For my configurations, check out:</p>
+<ul>
+<li><a href="https://github.com/joelazar/dotfiles/tree/main/dot_config/zed">Zed config</a></li>
+<li><a href="https://github.com/joelazar/nvim-config">Neovim config</a></li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+      <li><a href="http://localhost:1313/tags/editors/">Editors</a></li>
+      <li><a href="http://localhost:1313/tags/neovim/">Neovim</a></li>
+      <li><a href="http://localhost:1313/tags/zed/">Zed</a></li>
+      <li><a href="http://localhost:1313/tags/productivity/">Productivity</a></li>
+      <li><a href="http://localhost:1313/tags/programming/">Programming</a></li>
+      <li><a href="http://localhost:1313/tags/tools/">Tools</a></li>
+    </ul>
+<nav class="paginav">
+  <a class="next" href="http://localhost:1313/posts/lost-in-translation/">
+    <span class="title">Next »</span>
+    <br>
+    <span>Lost in translation - Remix edition</span>
+  </a>
+</nav>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">joelazar&#39;s personal blog</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = 'copy';
+
+        function copyingDone() {
+            copybutton.innerHTML = 'copied!';
+            setTimeout(() => {
+                copybutton.innerHTML = 'copy';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

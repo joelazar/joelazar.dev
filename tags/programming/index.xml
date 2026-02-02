@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Programming on joelazar&#39;s personal blog</title>
+    <link>http://localhost:1313/tags/programming/</link>
+    <description>Recent content in Programming on joelazar&#39;s personal blog</description>
+    <image>
+      <title>joelazar&#39;s personal blog</title>
+      <url>http://localhost:1313/profile.jpg</url>
+      <link>http://localhost:1313/profile.jpg</link>
+    </image>
+    <generator>Hugo -- 0.155.2</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 02 Feb 2026 18:30:00 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zed vs Neovim - A personal take</title>
+      <link>http://localhost:1313/posts/zed-vs-neovim/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>http://localhost:1313/posts/zed-vs-neovim/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using Neovim for years. It&amp;rsquo;s fast, extensible, and there&amp;rsquo;s a plugin for everything. But lately (actually, for quite a while now), I&amp;rsquo;ve been experimenting with &lt;a href=&#34;https://zed.dev/&#34;&gt;Zed&lt;/a&gt;, and I have some thoughts.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;why-zed-caught-my-attention-&#34;&gt;Why Zed caught my attention 🤩&lt;/h2&gt;
+&lt;p&gt;Zed is &lt;strong&gt;fast&lt;/strong&gt;. Like, really fast. But so is Neovim, so that&amp;rsquo;s not the selling point.&lt;/p&gt;
+&lt;p&gt;What made me curious:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Simpler config&lt;/strong&gt; - No more debugging why a plugin broke after an update&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Great vim emulation&lt;/strong&gt; - Actually usable, not an afterthought&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Built-in features&lt;/strong&gt; - Remote dev via SSH, REPL integration, debugging - all just work&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI integration&lt;/strong&gt; - Native, not bolted on through five different plugins&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Collaborative coding&lt;/strong&gt; - Finally, pair programming without screen sharing lag&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The development pace is impressive. New releases with meaningful content every week. And it&amp;rsquo;s open source.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
