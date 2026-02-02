@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="dark">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -21,16 +21,16 @@ Collaborative coding - Finally, pair programming without screen sharing lag
 
 The development pace is impressive. New releases with meaningful content every week. And it&rsquo;s open source.">
 <meta name="author" content="József Gábor Lázár">
-<link rel="canonical" href="http://localhost:1313/posts/zed-vs-neovim/">
+<link rel="canonical" href="https://joelazar.dev/posts/zed-vs-neovim/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.da3211e5ef867bf2b75fd5a6515cfed7195c011e8ab735694e203810a827097b.css" integrity="sha256-2jIR5e&#43;Ge/K3X9WmUVz&#43;1xlcAR6KtzVpTiA4EKgnCXs=" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
-<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
-<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<link rel="icon" href="https://joelazar.dev/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://joelazar.dev/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://joelazar.dev/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://joelazar.dev/apple-touch-icon.png">
+<link rel="mask-icon" href="https://joelazar.dev/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/zed-vs-neovim/">
+<link rel="alternate" hreflang="en" href="https://joelazar.dev/posts/zed-vs-neovim/">
 <noscript>
     <style>
         #theme-toggle,
@@ -46,7 +46,9 @@ The development pace is impressive. New releases with meaningful content every w
     }
 
 </script>
-<meta property="og:url" content="http://localhost:1313/posts/zed-vs-neovim/">
+<script data-goatcounter="https://joelazar.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<meta property="og:url" content="https://joelazar.dev/posts/zed-vs-neovim/">
   <meta property="og:site_name" content="joelazar&#39;s personal blog">
   <meta property="og:title" content="Zed vs Neovim - A personal take">
   <meta property="og:description" content="I’ve been using Neovim for years. It’s fast, extensible, and there’s a plugin for everything. But lately (actually, for quite a while now), I’ve been experimenting with Zed, and I have some thoughts.
@@ -64,9 +66,9 @@ Simpler config - No more debugging why a plugin broke after an update Great vim 
     <meta property="article:tag" content="Productivity">
     <meta property="article:tag" content="Programming">
     <meta property="article:tag" content="Tools">
-      <meta property="og:image" content="http://localhost:1313/profile.jpg">
+      <meta property="og:image" content="https://joelazar.dev/profile.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://localhost:1313/profile.jpg">
+<meta name="twitter:image" content="https://joelazar.dev/profile.jpg">
 <meta name="twitter:title" content="Zed vs Neovim - A personal take">
 <meta name="twitter:description" content="I&rsquo;ve been using Neovim for years. It&rsquo;s fast, extensible, and there&rsquo;s a plugin for everything. But lately (actually, for quite a while now), I&rsquo;ve been experimenting with Zed, and I have some thoughts.
 
@@ -92,13 +94,13 @@ The development pace is impressive. New releases with meaningful content every w
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "http://localhost:1313/posts/"
+      "item": "https://joelazar.dev/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "Zed vs Neovim - A personal take",
-      "item": "http://localhost:1313/posts/zed-vs-neovim/"
+      "item": "https://joelazar.dev/posts/zed-vs-neovim/"
     }
   ]
 }
@@ -116,7 +118,7 @@ The development pace is impressive. New releases with meaningful content every w
   "articleBody": "I’ve been using Neovim for years. It’s fast, extensible, and there’s a plugin for everything. But lately (actually, for quite a while now), I’ve been experimenting with Zed, and I have some thoughts.\nWhy Zed caught my attention 🤩 Zed is fast. Like, really fast. But so is Neovim, so that’s not the selling point.\nWhat made me curious:\nSimpler config - No more debugging why a plugin broke after an update Great vim emulation - Actually usable, not an afterthought Built-in features - Remote dev via SSH, REPL integration, debugging - all just work AI integration - Native, not bolted on through five different plugins Collaborative coding - Finally, pair programming without screen sharing lag The development pace is impressive. New releases with meaningful content every week. And it’s open source.\nWhere Zed falls short (for now) 🥲 Moving from Neovim, there are gaps. Some are Zed-specific issues, others are missing plugin equivalents.\nDealbreakers for some:\nNo persistent undo history - Close a buffer, lose your undo history Fuzzy finder lacks power - Not Telescope-level yet, but there’s a promising PR Terminal is tied to the editor - New instance = lost terminal session. Not ideal for long-running processes Missing Neovim goodies:\nflash.nvim - Quick navigation is part of my muscle memory dial.nvim - Incrementing true to false with is surprisingly useful cmp-calc / cmp-path - Calculator and path completion in the completion menu TODO comment highlighting Some language-specific plugins are better maintained in Neovim Polish needed:\nGit conflict resolution could be better No undo for file deletions Image previews don’t work in terminal apps like yazi No recent project search command Project search could use prefiltering (ctrl+g) and current directory scope Jupyter notebook integration would be nice The good news? Zed’s team ships fixes fast. Issues that annoyed me before are already resolved: window resize with keyboard, terminal splits, completion menu scrolling, diff view, slow Neovim in Zed terminal, and vim marks as bookmarks.\nThe real problem with Neovim 💔 It’s not Neovim itself. It’s the ecosystem.\nThe LazyVim distribution is great, but you’re at the mercy of individual plugin authors. Sometimes, for example, folke disappears for months - and he alone maintains the majority of plugins that most modern Neovim configurations depend on. One person maintaining critical infrastructure is a single point of failure. This is absolutely no shame on folke - he’s doing amazing work for free - but this is just how open source works.\nPlugin updates break things. You spend time maintaining your config instead of actually coding. Debugging and task running still feel like second-class citizens compared to IDEs.\nSome pain points that IDEs handle better:\nDebugging experience Collaborative coding UI flexibility (terminal constraints are real) Long-term maintenance by dedicated teams vs. solo maintainers My verdict 📔 Both are great. Both are fast. Both are open source.\nZed is easier to use and maintain. Neovim is more powerful and customizable.\nFor now, I’m using both. Doing quick edits still feels easier in Neovim. Zed when I want to spend a bigger chunk of time on a codebase. I try to keep my LazyVim and Zed keymaps similar, so I don’t have to think too much about which editor I’m using.\nThe best editor is the one that gets out of your way. Sometimes that’s Neovim. Sometimes it’s Zed.\nFor my configurations, check out:\nZed config Neovim config ",
   "wordCount" : "565",
   "inLanguage": "en",
-  "image": "http://localhost:1313/profile.jpg","datePublished": "2026-02-02T18:30:00+01:00",
+  "image": "https://joelazar.dev/profile.jpg","datePublished": "2026-02-02T18:30:00+01:00",
   "dateModified": "2026-02-02T18:30:00+01:00",
   "author":{
     "@type": "Person",
@@ -124,14 +126,14 @@ The development pace is impressive. New releases with meaningful content every w
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "http://localhost:1313/posts/zed-vs-neovim/"
+    "@id": "https://joelazar.dev/posts/zed-vs-neovim/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "joelazar's personal blog",
     "logo": {
       "@type": "ImageObject",
-      "url": "http://localhost:1313/favicon.ico"
+      "url": "https://joelazar.dev/favicon.ico"
     }
   }
 }
@@ -141,7 +143,7 @@ The development pace is impressive. New releases with meaningful content every w
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="joelazar&#39;s personal blog (Alt + H)">joelazar&#39;s personal blog</a>
+            <a href="https://joelazar.dev/" accesskey="h" title="joelazar&#39;s personal blog (Alt + H)">joelazar&#39;s personal blog</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -167,17 +169,17 @@ The development pace is impressive. New releases with meaningful content every w
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts" title="Posts">
+                <a href="https://joelazar.dev/posts" title="Posts">
                     <span>Posts</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/search/" title="Search (Alt &#43; /)" accesskey=/>
+                <a href="https://joelazar.dev/search/" title="Search (Alt &#43; /)" accesskey=/>
                     <span>Search</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="Tags">
+                <a href="https://joelazar.dev/tags/" title="Tags">
                     <span>Tags</span>
                 </a>
             </li>
@@ -188,15 +190,9 @@ The development pace is impressive. New releases with meaningful content every w
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://joelazar.dev/">Home</a>&nbsp;»&nbsp;<a href="https://joelazar.dev/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Zed vs Neovim - A personal take
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
     </h1>
     <div class="post-meta"><span title='2026-02-02 18:30:00 +0100 CET'>February 2, 2026</span>&nbsp;·&nbsp;<span>József Gábor Lázár</span>
 
@@ -271,15 +267,15 @@ The development pace is impressive. New releases with meaningful content every w
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/editors/">Editors</a></li>
-      <li><a href="http://localhost:1313/tags/neovim/">Neovim</a></li>
-      <li><a href="http://localhost:1313/tags/zed/">Zed</a></li>
-      <li><a href="http://localhost:1313/tags/productivity/">Productivity</a></li>
-      <li><a href="http://localhost:1313/tags/programming/">Programming</a></li>
-      <li><a href="http://localhost:1313/tags/tools/">Tools</a></li>
+      <li><a href="https://joelazar.dev/tags/editors/">Editors</a></li>
+      <li><a href="https://joelazar.dev/tags/neovim/">Neovim</a></li>
+      <li><a href="https://joelazar.dev/tags/zed/">Zed</a></li>
+      <li><a href="https://joelazar.dev/tags/productivity/">Productivity</a></li>
+      <li><a href="https://joelazar.dev/tags/programming/">Programming</a></li>
+      <li><a href="https://joelazar.dev/tags/tools/">Tools</a></li>
     </ul>
 <nav class="paginav">
-  <a class="next" href="http://localhost:1313/posts/lost-in-translation/">
+  <a class="next" href="https://joelazar.dev/posts/lost-in-translation/">
     <span class="title">Next »</span>
     <br>
     <span>Lost in translation - Remix edition</span>
@@ -291,7 +287,7 @@ The development pace is impressive. New releases with meaningful content every w
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">joelazar&#39;s personal blog</a></span> · 
+        <span>&copy; 2026 <a href="https://joelazar.dev/">joelazar&#39;s personal blog</a></span> · 
 
     <span>
         Powered by

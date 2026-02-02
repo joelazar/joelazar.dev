@@ -11,8 +11,50 @@
     </image>
     <generator>Hugo -- 0.155.2</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 22 Aug 2022 08:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 02 Feb 2026 18:30:00 +0100</lastBuildDate>
     <atom:link href="https://joelazar.dev/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Editors</title>
+      <link>https://joelazar.dev/tags/editors/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>https://joelazar.dev/tags/editors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Neovim</title>
+      <link>https://joelazar.dev/tags/neovim/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>https://joelazar.dev/tags/neovim/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Productivity</title>
+      <link>https://joelazar.dev/tags/productivity/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>https://joelazar.dev/tags/productivity/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>https://joelazar.dev/tags/programming/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>https://joelazar.dev/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Tools</title>
+      <link>https://joelazar.dev/tags/tools/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>https://joelazar.dev/tags/tools/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zed</title>
+      <link>https://joelazar.dev/tags/zed/</link>
+      <pubDate>Mon, 02 Feb 2026 18:30:00 +0100</pubDate>
+      <guid>https://joelazar.dev/tags/zed/</guid>
+      <description></description>
+    </item>
     <item>
       <title>JSON</title>
       <link>https://joelazar.dev/tags/json/</link>

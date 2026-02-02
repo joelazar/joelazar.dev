@@ -1,6 +1,7 @@
 # joelazar's personal blog
 
 ## Posts
+- [Zed vs Neovim - A personal take](https://joelazar.dev/posts/zed-vs-neovim/)
 - [Lost in translation - Remix edition](https://joelazar.dev/posts/lost-in-translation/)
 - [Refactored dotfiles](https://joelazar.dev/posts/second-post/)
 - [My first post](https://joelazar.dev/posts/first-post-with-my-dogs/)
